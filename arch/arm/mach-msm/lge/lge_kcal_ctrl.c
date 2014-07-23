@@ -15,7 +15,6 @@
  *
  */
 
-#include <mach/board_lge.h>
 #include <linux/kernel.h>
 #include <linux/device.h>
 #include <linux/platform_device.h>
