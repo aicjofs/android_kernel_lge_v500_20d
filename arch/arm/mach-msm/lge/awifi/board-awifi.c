@@ -2324,14 +2324,14 @@ static struct platform_device msm_tsens_device = {
 static struct msm_thermal_data msm_thermal_pdata = {
 	.sensor_id = 7,
 #ifdef CONFIG_MACH_LGE
-	.poll_ms = 1000,
-	.limit_temp_degC = 97,
+	.poll_ms = 500,
+	.limit_temp_degC = 93,
 #else
 	.poll_ms = 250,
 	.limit_temp_degC = 60,
 #endif
-	.temp_hysteresis_degC = 10,
-	.freq_step = 2,
+	.temp_hysteresis_degC = 5,
+	.freq_step = 1,
 #if defined(CONFIG_MACH_APQ8064_AWIFI)
         // It is cause of MPdecision problem. so, changed to Higher value than Thermal_deamon's setting
 	.core_limit_temp_degC = 120,
