@@ -167,10 +167,6 @@ static int __init msm_contig_mem_size_setup(char *p)
 early_param("msm_contig_mem_size", msm_contig_mem_size_setup);
 #endif
 
-#ifdef CONFIG_CPU_FREQ_GOV_INTELLIDEMAND 
-int id_set_two_phase_freq(int cpufreq);
-#endif
-
 #ifdef CONFIG_ANDROID_PMEM
 static unsigned pmem_size = MSM_PMEM_SIZE;
 static int __init pmem_size_setup(char *p)
