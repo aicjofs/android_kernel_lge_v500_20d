@@ -2325,7 +2325,7 @@ static struct msm_thermal_data msm_thermal_pdata = {
 	.sensor_id = 7,
 #ifdef CONFIG_MACH_LGE
 	.poll_ms = 1000,
-	.limit_temp_degC = 93,
+	.limit_temp_degC = 97,
 #else
 	.poll_ms = 250,
 	.limit_temp_degC = 60,
