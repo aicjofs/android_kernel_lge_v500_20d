@@ -19,21 +19,13 @@
 
 #define lzo1x_worst_compress(x) ((x) + ((x) / 16) + 64 + 3)
 
-<<<<<<< HEAD
-/* This requires 'workmem' of size LZO1X_1_MEM_COMPRESS */
-=======
 /* This requires 'wrkmem' of size LZO1X_1_MEM_COMPRESS */
->>>>>>> 0565a16... lib/lzo: Update LZO compression to current upstream version
 int lzo1x_1_compress(const unsigned char *src, size_t src_len,
 		     unsigned char *dst, size_t *dst_len, void *wrkmem);
 
-/* safe decompression with overrun testing */
 int lzo1x_decompress_safe(const unsigned char *src, size_t src_len,
 			  unsigned char *dst, size_t *dst_len);
 
-/*
- * Return values (< 0 = Error)
- */
 #define LZO_E_OK			0
 #define LZO_E_ERROR			(-1)
 #define LZO_E_OUT_OF_MEMORY		(-2)
